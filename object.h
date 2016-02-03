@@ -14,8 +14,7 @@
 //  http://isgwww.cs.uni-magdeburg.de/graphik/lehre/cg2/projekt/rtprojekt.html 
 //
 
-#ifndef OBJECT_H_AXKLE0OF
-#define OBJECT_H_AXKLE0OF
+#pragma once
 
 #include "triple.h"
 #include "light.h"
@@ -30,5 +29,3 @@ public:
 
     virtual Hit intersect(const Ray &ray) = 0;
 };
-
-#endif /* end of include guard: OBJECT_H_AXKLE0OF */
