@@ -156,5 +156,9 @@ void Raytracer::renderToFile(const std::string& outputFilename)
     scene->render(img);
     cout << "Writing image to " << outputFilename << "..." << endl;
     img.write_png(outputFilename.c_str());
+	std::string commandStr("start mspaint ");
+	commandStr = commandStr + outputFilename;
+	system(commandStr.c_str());
+
     cout << "Done." << endl;
 }
